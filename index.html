@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.icons8.com/external-those-icons-fill-those-icons/96/null/external-Spade-casino-and-leisure-those-icons-fill-those-icons.png" />
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="start-modal-shadow">
+        <div class="modal-bgc">
+            <div class="modal">
+                <div class="modal__top">
+                    <img
+                        src="https://img.icons8.com/external-those-icons-fill-those-icons/96/null/external-Spade-casino-and-leisure-those-icons-fill-those-icons.png" />
+                    <div class="modal__top-number">21</div>
+                    <h1 class="modal__top-title">blackjack</h1>
+                </div>
+                <div class="modal__content">
+                    <h2 class="modal__content-title">Zasady gry</h2>
+                    <ul class="modal__content-lists">
+                        <li>Dobierz kartę klikając na stos kart!</li>
+                        <li>Twój cel to zdobyć 21 punktów!</li>
+                        <li>Pamiętaj aby nie przekroczyć pułapu 21 punktów! Przekroczenie tej wartości to twoja
+                            porażka, niezależnie od liczby punktów oponenta!</li>
+                        <li>Jeżeli jesteś usatysfakcjonowany mniejszą liczbą punktów - możesz spasować w każdej
+                            chwili
+                            klikając na przycisk łapki!</li>
+                    </ul>
+                    <h2 class="modal__content-oponents-title">Przeciwnicy</h2>
+                    <div class="modal__content-oponents">
+                        <input type="text" placeholder="Gracz 1" class="modal__content-oponents-player1">
+                        <input type="text" placeholder="Gracz 2" class="modal__content-oponents-player2">
+                    </div>
+                    <button class="modal__content-btn-start">Zagrajmy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="table">
+            <p class="table__current-player">Gracz</p>
+            <div class="table__cards">
+                <img src="" class="table__card">
+                <img src="" class="table__card">
+                <img src="" class="table__card">
+                <img src="" class="table__card">
+                <img src="" class="table__card">
+
+            </div>
+            <img src="back.PNG" alt="Tył karty karcianej" class="table__stack">
+            <button class="table__btn-pass"><i class="ti ti-hand-stop"></i></button>
+        </div>
+
+        <div class="menu">
+            <div class="menu__left">
+                <i class="ti ti-user"></i>
+                <p class="menu__left-player">Gracz 1</p>
+                <p class="menu__left-score">0</p>
+            </div>
+            <div class="menu__center">
+                <img
+                    src="https://img.icons8.com/external-those-icons-fill-those-icons/96/null/external-Spade-casino-and-leisure-those-icons-fill-those-icons.png" />
+                <div class="menu__center-number">21</div>
+                <h1 class="menu__center-title">blackjack</h1>
+            </div>
+            <div class="menu__right">
+                <i class="ti ti-user"></i>
+                <p class="menu__right-player">Gracz 2</p>
+                <p class="menu__right-score">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="end-modal-shadow">
+        <div class="modal-bgc">
+            <div class="modal">
+                <div class="modal__top">
+                    <img
+                        src="https://img.icons8.com/external-those-icons-fill-those-icons/96/null/external-Spade-casino-and-leisure-those-icons-fill-those-icons.png" />
+                    <div class="modal__top-number">21</div>
+                    <h1 class="modal__top-title">blackjack</h1>
+                </div>
+                <div class="modal__content">
+                    <p class="modal__content-title-winner">wygrywa gracz 1!</p>
+                    <i class="ti ti-trophy"></i>
+                    <p class="modal__content-summary">Podsumowanie gry</p>
+                    <div class="modal__content-box">
+                        <p class="modal__content-box-player1">Gracz 1</p>
+                        <p class="modal__content-box-score1">0</p>
+                    </div>
+                    <div class="modal__content-box">
+                        <p class="modal__content-box-player2">Gracz 2</p>
+                        <p class="modal__content-box-score2">0</p>
+                    </div>
+                    <button class="modal__content-btn-new-game">Nowa gra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
